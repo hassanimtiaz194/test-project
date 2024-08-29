@@ -194,7 +194,7 @@ export default function BasicTable({ students, updateSearchParams }) {
         </Table>
         <TablePagination
           sx={{ borderTop: "solid 1px #efefef" }}
-          rowsPerPageOptions={[5, 10, 25]}
+          rowsPerPageOptions={[5, 10, 25, 50, 100]}
           component="div"
           count={students.length}
           rowsPerPage={rowsPerPage}
