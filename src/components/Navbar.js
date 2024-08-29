@@ -90,6 +90,12 @@ function Navbar() {
               {pages.map((page) => (
                 <MenuItem
                   key={page}
+                  sx={{
+                    "&:hover": {
+                      backgroundColor: "lightblue",
+                      color: "white",
+                    },
+                  }}
                   onClick={() => {
                     handleCloseNavMenu();
                     navigation(page);
@@ -123,11 +129,19 @@ function Navbar() {
             {pages.map((page) => (
               <Button
                 key={page}
+                sx={{
+                  my: 2,
+                  color: "white",
+                  display: "block",
+                  "&:hover": {
+                    backgroundColor: "lightblue",
+                    color: "white",
+                  },
+                }}
                 onClick={() => {
                   handleCloseNavMenu();
                   navigation(page);
                 }}
-                sx={{ my: 2, color: "white", display: "block" }}
               >
                 {page}
               </Button>

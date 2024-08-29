@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import BasicTable from "../components/BasicTable";
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import axios from "axios";
 
 function Home() {
@@ -55,6 +55,9 @@ function Home() {
           updateSearchParams(key, value);
         }}
       />
+      <Typography color="red" paddingTop="10px">
+        Note: pagignation will not work as the public api is not paginated
+      </Typography>
     </Box>
   );
 }
